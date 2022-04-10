@@ -1,0 +1,20 @@
+.Container1 {
+    position: relative;
+    width: 100%;
+  }
+
+ .Container1 .Info {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
