@@ -2,14 +2,14 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Moviecard from './Moviecard'
 
-function Homesection() {
+function Homesection(props) {
   return (
     <React.Fragment>
        
       <Container fluid>
           <Row >
               <Col>
-          <h3 style={{color:"white",fontWeight:'bold'}}>Trending</h3> 
+          <h3 style={{color:"white",fontWeight:'bold'}}>{props.title}</h3> 
           </Col>
           </Row>
           <Row>

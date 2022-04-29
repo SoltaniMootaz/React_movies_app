@@ -1,29 +1,23 @@
-import logo from "./logo.svg";
 import "./Styles/App.css";
 import React from "react";
-import Appbar from "./Components/Appbar";
-import Indeximg from "./Components/Indeximg";
-import Homesection from "./Components/Homesection";
+import Home from "./Pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Movies from "./Pages/Movies";
+import Bookmarks from "./Pages/Bookmarks";
+import LoginForm from "./Components/LoginForm";
+import SignupForm from "./Components/SignupForm";
 function App() {
     return (
         <div className="App">
-            <Appbar />
-            <Indeximg />
-            <Homesection />
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <Router>
+                <Routes>
+                    <Route exact path="/Login" element={<LoginForm />}></Route>
+                    <Route exact path="/Signup" element={<SignupForm />}></Route>
+                    <Route exact path="/Home" element={<Home />}></Route>
+                    <Route exact path="/Movies" element={<Movies />}></Route>
+                    <Route exact path="/Bookmarks" element={<Bookmarks />}></Route>
+                </Routes>
+            </Router>
         </div>
     );
 }
