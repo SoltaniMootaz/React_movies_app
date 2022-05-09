@@ -1,10 +1,10 @@
 const express = require("express");
 
-const recordRoutes = express.Router();
+const userRoutes = express.Router();
 
 const dbo = require("../db/conn");
 
-recordRoutes.route("/record").get(function (req, res) {
+userRoutes.route("/users").get(function (req, res) {
     let db_connect = dbo.getDb("NetBlix");
     db_connect
         .collection("Users")
