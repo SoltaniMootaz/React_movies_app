@@ -10,7 +10,7 @@ function Movies() {
     <React.Fragment>
         <Appbar />
         <div className='Filter-Section' style={{marginTop:'1.5em'}}>
-          <Container>
+          <Container fluid>
             <Row>
               <Col></Col>
               <Col>

@@ -1,8 +1,13 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Moviecard from './Moviecard'
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
+import SwiperCore,{Autoplay} from "swiper"
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 
 function Homesection(props) {
+  SwiperCore.use([Autoplay])
   return (
     <React.Fragment>
        
@@ -12,10 +17,21 @@ function Homesection(props) {
           <h3 style={{color:"white",fontWeight:'bold'}}>{props.title}</h3> 
           </Col>
           </Row>
-          <Row>
-            <Col><Moviecard /></Col>
-            <Col><Moviecard /></Col>
-            <Col><Moviecard /></Col>
+          <Row style={{height:"auto"}}>
+          <Swiper
+      spaceBetween={50}
+      slidesPerView={4}
+      Autoplay={{delay: 1000}}
+      centeredSlides={true}
+      centeredSlidesBounds={true}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide><Moviecard /></SwiperSlide>
+      <SwiperSlide><Moviecard /></SwiperSlide>
+      <SwiperSlide><Moviecard /></SwiperSlide>
+      <SwiperSlide><Moviecard /></SwiperSlide>
+      </Swiper>
           </Row>
       </Container>
       <hr style={{border:'0.08rem solid #4E9F3D',backgroundColor:'#4E9F3D'}} />

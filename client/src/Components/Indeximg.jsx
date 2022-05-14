@@ -6,7 +6,7 @@ function Indeximg() {
   return (
     <React.Fragment>
         <div className='Container1'>
-        <img src={img} style={{width:"100%", height:"50em",filter:"brightness(35%)",borderBottom:"0.1rem solid #4E9F3D"}} alt=""/>
+        <img src={img} style={{width:"100%", height:"25em",filter:"brightness(35%)",borderBottom:"0.1rem solid #4E9F3D"}} alt=""/>
         <div className='Info'>
         <h3 style={{color:'white'}}>Watch more with premium</h3>
         <p style={{color:'white'}}>Download and watch more movies, series and tv shows.</p>.

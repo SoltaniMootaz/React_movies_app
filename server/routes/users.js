@@ -15,4 +15,4 @@ userRoutes.route("/users").get(function (req, res) {
         });
 });
 
-module.exports = recordRoutes;
+module.exports = userRoutes;
