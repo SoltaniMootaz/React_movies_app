@@ -27,10 +27,11 @@ function Homesection(props) {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><Moviecard /></SwiperSlide>
-      <SwiperSlide><Moviecard /></SwiperSlide>
-      <SwiperSlide><Moviecard /></SwiperSlide>
-      <SwiperSlide><Moviecard /></SwiperSlide>
+      {
+        props.data.map(movie=>
+          (<SwiperSlide><Moviecard data={movie} /></SwiperSlide>)
+      )
+      }
       </Swiper>
           </Row>
       </Container>

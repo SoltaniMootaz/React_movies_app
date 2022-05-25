@@ -1,4 +1,4 @@
- .card {
+/*  .card {
   
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -11,7 +11,7 @@
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-*/
+
   .container1 {
     position: absolute;
     bottom: 0.2em;
@@ -25,10 +25,39 @@
     cursor: pointer;
   
   }
-  
+ 
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(206, 206, 206, 0.2);
     cursor: pointer;
     transform: scale(1.01); 
   } 
-  
+  */
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	
+	transform: scale(1.0);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+  color: aliceblue;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.overlay:hover{
+  cursor: pointer;
+}

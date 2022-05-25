@@ -4,6 +4,7 @@ function Appbar() {
  
   return (
     <>
+    
     <Navbar bg="dark" expand="lg" style={{borderBottom:"0.1rem solid #4E9F3D"}}>
   <Container fluid Style={{display:"flex",justifyContent:"space-around"}}>
     <div style={{marginLeft:"3em"}}>
@@ -14,9 +15,9 @@ function Appbar() {
     <div style={{marginRight:"3em"}}>
     <Navbar.Collapse id="basic-navbar-nav ">
       <Nav className="me-auto justify-content-end">
-        <Nav.Link href="/Home" style={{color:"#4E9F3D"}} Link={""}>Home</Nav.Link>
-        <Nav.Link href="/Movies" style={{color:"#4E9F3D"}} Link={""}>Movies</Nav.Link>
-        <Nav.Link href="/Bookmarks" style={{color:"#4E9F3D"}} Link={""}>Bookmarks</Nav.Link>
+        <Nav.Link href="/Home" style={{color:"#4E9F3D"}} >Home</Nav.Link>
+        <Nav.Link href="/Movies" style={{color:"#4E9F3D"}} >Movies</Nav.Link>
+        <Nav.Link href="/Bookmarks" style={{color:"#4E9F3D"}} >Bookmarks</Nav.Link>
     
       </Nav>
     </Navbar.Collapse>

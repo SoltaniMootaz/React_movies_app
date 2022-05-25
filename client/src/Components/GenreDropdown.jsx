@@ -13,7 +13,7 @@ function GenreDropdown() {
     >
        
       {
-          list_genre.map((element)=> <Dropdown.Item href="#">{element}</Dropdown.Item>)
+          list_genre.map((element,index)=> <Dropdown.Item key={index}>{element}</Dropdown.Item>)
       }
       <Dropdown.Divider />
       <Dropdown.Item href="#">All</Dropdown.Item>
