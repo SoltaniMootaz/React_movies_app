@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(require("./routes/users"));
 app.use(require("./routes/movies"));
-//app.use(require("./routes/bookmark"));
+app.use(require("./routes/bookmark"));
 const dbo = require("./db/conn");
 
 mongoose

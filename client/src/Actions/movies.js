@@ -6,7 +6,7 @@ const load_movies = () => async (_dispatch) => {
     _dispatch({ type: FETCH_REQUEST });
     try {
         const response = await Axios.get("http://localhost:3001/getAllMovies");
-
+        console.log("here2");
         _dispatch({ type: FETCH_SUCCESS, payload: response });
     } catch (error) {
         _dispatch({ type: FETCH_FAIL, error });

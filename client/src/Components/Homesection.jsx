@@ -21,7 +21,7 @@ function Homesection(props) {
           <Swiper
       spaceBetween={50}
       slidesPerView={4}
-      Autoplay={{delay: 1000}}
+      autoplay={{delay: 1000}}
       centeredSlides={true}
       centeredSlidesBounds={true}
       onSlideChange={() => console.log('slide change')}

@@ -15,8 +15,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Navigate to="/Login" replace />} />
-                    <Route path="/FILM" component={home}></Route>
-                    
+
                     <Route exact path="/Login" element={<LoginForm />}></Route>
                     <Route exact path="/Signup" element={<SignupForm />}></Route>
                     <Route

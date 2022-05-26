@@ -37,6 +37,7 @@ userRoutes.post("/CheckUser", async (req, res) => {
     await user.findOne({ $or: [{ email: _username }, { username: _username }] }).then((result) => {
         if (result) {
             if (result.password == _password) {
+                console.log(result);
                 res.status(200).send(result);
             } else {
                 res.status(200).send("mot de pass incorrect");

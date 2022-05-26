@@ -20,7 +20,8 @@ function LoginForm() {
             'username':_username,
             'password':_password
             }).then((res)=>{
-            localStorage.setItem("id",res._id);
+
+            localStorage.setItem("id",res.data._id);
             window.location.href = "Home";
         }).catch(error=>{
             if (error.response){
